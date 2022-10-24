@@ -1,4 +1,4 @@
-:root{
+ :root{
     --accent-color:#2196F3;
     --primary-text-color:#212121;
     --thirdly-text-color:#FFFFFF;
@@ -68,7 +68,12 @@ color:#2196F3;
 .contact-link{
     color: var(--secondary-text-color);
 }
+.contact-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
 /* основное */
+
 .section{
     width: 1600px;
     padding-top: 94px;
@@ -82,6 +87,16 @@ color:#2196F3;
     margin-left: auto;
     margin-right: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .section.hero{
 padding-top: 200px;
 padding-bottom: 200px;
@@ -137,20 +152,6 @@ nav{
 }
 .contact-item:not(:first-child){
     margin-left: 50px;
-}
-.mail::before{
-    content: "";
-    width: 16px;
-    height: 12px;
-    background-image: url(./images/mail.svg);
-    background-size: contain;
-}
-.telephon::before{
-    content: "";
-    width: 10px;
-    height: 16px;
-    background-image: url(./images/telephon.svg);
-    background-size: contain;
 }
 /* футер */
 .section.footer{
