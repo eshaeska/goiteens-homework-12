@@ -4,6 +4,7 @@
     --thirdly-text-color:#FFFFFF;
     --secondary-text-color:#757575;
     --background-color:#2F303A ;
+    --svg: rgba(175, 177, 184, 1);
 }
 /* #212121 -primary-text-color
 #2196F3 -accent-color
@@ -229,7 +230,20 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 .team-icon:hover,
 .team-icon:focus{
-    color: #2196F3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: var(--thirdly-text-color);
+    color: var(--svg);
+}
+.team-icon{
+    background-color: var(--accent-color);
+    color: var(--thirdly-text-color);
 }
 .icon-box{
     width: 270px;
@@ -239,10 +253,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     justify-content: center;
 }
 .sm-icon{
-    width: 45px;
-    height: 45px;
+    margin-top: 16px;
+    width: 20px;
+    height: 20px;
     color: white;
+    border-radius: 50px;
 }
-.sm-icon:not(:first-child){
-    margin-left: 10px;
+.card-item:not(:first-child){
+    margin-left: 35px;
 }
